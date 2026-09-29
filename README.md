@@ -10,7 +10,7 @@ No account, no uploads, works offline.
 | **Android** | [Google Play](https://play.google.com/store/apps/details?id=io.github.bogdanovi.media_cleaner) |
 | **Windows 10 / 11** (64-bit) | [Latest release](https://github.com/BogdanovI/media-cleaner/releases/latest) — installer or portable zip |
 | **Linux** (x86-64) | [Latest release](https://github.com/BogdanovI/media-cleaner/releases/latest) — portable `.tar.gz` |
-| **macOS** | Coming soon |
+| **macOS 10.15+** (Intel & Apple Silicon) | [Latest release](https://github.com/BogdanovI/media-cleaner/releases/latest) — `.zip` |
 
 <a href="https://play.google.com/store/apps/details?id=io.github.bogdanovi.media_cleaner"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80"></a>
 
@@ -40,6 +40,22 @@ Needs a 64-bit desktop Linux with GTK 3 and glibc 2.38 or newer — for example
 Ubuntu 24.04, Debian 13, Fedora 39, Linux Mint 22 or later. There is no menu
 entry yet — run it from the unpacked folder.
 
+### macOS
+
+Download `MediaCleaner-<version>-macos.zip`, unzip it and move
+**Media Cleaner** to Applications. One build runs on both Intel and Apple
+Silicon Macs, macOS 10.15 Catalina or newer.
+
+The app is not signed with an Apple Developer ID, so macOS blocks the first
+launch:
+
+- **macOS 15 Sequoia and newer:** open the app once, close the warning, then go to
+  **System Settings → Privacy & Security** and click **Open Anyway**.
+- **macOS 14 and older:** right-click (or Control-click) the app, choose
+  **Open**, then **Open** again.
+
+After that it opens normally.
+
 ## What it finds
 
 - **Duplicate photos** — compared by how they look, not just by name or size,
@@ -58,7 +74,7 @@ directories out of every scan.
 
 ## Desktop version
 
-On Windows and Linux (macOS later) you pick a folder or a whole drive to
+On Windows, macOS and Linux you pick a folder or a whole drive to
 scan — handy for camera archives and external disks. The desktop version is
 **free, with no ads and no limits**: every setting is unlocked.
 
